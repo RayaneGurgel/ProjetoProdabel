@@ -10,31 +10,6 @@
 	<body>
 		<link rel="stylesheet" href="../css/style.css">
 	<!--Estilos menu--> 	
-		<style>			
-			ul {
-			  list-style-type: none;
-			  margin: 0;
-			  padding: 0;
-			  overflow: hidden;
-			  background-color: #9AC0CD;
-			}
-			
-			li {
-			  float: left;
-			}
-			
-			li a {
-			  display: block;
-			  color: #FFFFFF;
-			  text-align: center;
-			  padding: 16px;
-			  text-decoration: none;
-			}
-			
-			li a:hover {
-			  background-color: #487eb0;
-			}
-			</style>		
 		
 			<h1 style="font-family: fantasy; font-size: 300%; text-align: center;">Login
 			</h1>
@@ -48,8 +23,24 @@
 				<li><a style="font-size: x-large;" href="entrar.html"><b>Login</b></a></li>
 			</ul>
 		<br>
+		
+		<!-- Formulário-->
+		<form id="login"> 
+			<fieldset>
+				<legend> Insira seus dados:</legend>
+				<label for="email">E-mail:</label><br>
+				<input type="email" id="email" name="email"><br><br>
+				<label for="senha">Senha:</label><br>
+				<input type="password" id="senha" name="senha"><br><br>
+				<input type="submit" value="Entrar">
+				<input type="submit" value="Esqueci minha senha">
+			</fieldset>	
+		</form>
+		<br>
+		<br>
+		
 		<!--Rodapé-->
-		<footer> <i>© O Peixeiro - Todos os direitos reservados - 2021</i>
+		<footer id="rodape" class="rodape"> <i>© O Peixeiro - Todos os direitos reservados - 2021</i>
 		</footer>
 	</body>
 </html>
